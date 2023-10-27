@@ -1,0 +1,18 @@
+public class Fibonacci {
+    public static void main(String[] args) {
+        int n = 10; // Change 'n' to the desired Fibonacci number position
+
+        long a = 0;
+        long b = 1;
+
+        System.out.println("Fibonacci Sequence up to position " + n + ":");
+        System.out.print(a + ", " + b);
+
+        for (int i = 2; i <= n; i++) {
+            long next = a + b;
+            System.out.print(", " + next);
+            a = b;
+            b = next;
+        }
+    }
+}
